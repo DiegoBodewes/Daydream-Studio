@@ -1,0 +1,301 @@
+//HTML ↓↓↓
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>OVER ONS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="name">Daydream Studios</a>
+    
+                <ul class="menu">
+                    <li class="m-index">
+                        <a href="index.html" class="m-link">Over ons</a>
+                    </li>
+                    <li class="m-index">
+                        <a href="index.html" class="m-link">Projecten</a>
+                    </li>
+                    <li class="m-index">
+                        <a href="index.html" class="m-link">Contact</a>
+                    </li>
+                </ul>
+    
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+    
+            </nav>
+        </header>
+
+        <img src="example_02.jpg" alt="" class="responsive">
+
+            <div class="context">
+
+                <div class="paginatitel">
+                    <h1>OVER ONS</h1>
+                </div>
+
+
+                <div class="ctop">
+                    <div class="Diego">
+                        <h2>Diëgo</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Curabitur dignissim finibus diem, at laoreet leo.
+                        <br> Mauris nec varius eros, eget consequat magna.
+                        </p>
+                    </div>
+
+                    <div class="Diam">
+                        <h2>Diam</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                           Curabitur dignissim finibus diem, at laoreet leo.
+                        <br> Mauris nec varius eros, eget consequat magna.
+                    </div>
+                </div>
+
+
+                <div class="cbottom">
+                    <div class="Yoran">
+                        <h2>Yoran</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                           Curabitur dignissim finibus diem, at laoreet leo.
+                        <br> Mauris nec varius eros, eget consequat magna.
+                    </div>
+
+                    <div class="Alec">
+                        <h2>Alec</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                           Curabitur dignissim finibus diem, at laoreet leo.
+                        <br> Mauris nec varius eros, eget consequat magna.
+                    </div>    
+            </div>
+
+                    <div class="extra">
+
+                    </div>
+            </div>
+
+        
+        <script src="index.js" async defer></script>
+    </body>
+</html>
+
+
+_______________________________________________________________________________________________________________________________________________
+
+
+CSS ↓↓↓
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(42, 61, 111);
+}
+
+:root{
+  --light: #e02f09
+}
+
+header {
+  background-color: rgb(35, 51, 92);
+  border-bottom: 1.5px solid var(--light);
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: Courier New;
+}
+
+span {
+  color: #f90227de;
+}
+
+li {
+  list-style: none;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgb(149, 149, 149); 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(100, 100, 100); 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.responsive{
+    max-width: 100%;
+    width: 100%;
+    height: 420px;
+    max-height: 100%;
+    display: block;
+    padding-top: 69px;
+}
+
+.context{
+    font-size: medium;
+    font-family: Garamond;
+    text-align: center;
+    position: relative;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+}
+
+.paginatitel{
+    font-size: x-large;
+    padding-top: 20px;
+}
+
+.ctop{
+    column-count: 2;
+    padding-top: 60px;
+}
+
+.cbottom{
+    column-count: 2;
+    padding-top: 150px;
+}
+
+.Diego{
+
+}
+
+.Diam{
+
+}
+
+.Yoran{
+
+}
+
+.Alec{
+
+}
+
+.extra{
+    padding-top: 200px;
+}
+
+.navbar {
+  min-height: 70px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  position: fixed;
+  align-items: center;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.m-link {
+  transition: 0.7s ease-in-out;
+}
+
+.m-link:hover {
+  color: #f90227de;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(212, 211, 211);
+}
+
+@media(max-width:768px) {
+  .hamburger {
+      display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu {
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: rgb(42, 61, 111);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      border-bottom: 3px solid var(--light);
+  }
+
+  .m-link {
+    margin: 16px 0;
+}
+
+.menu.active {
+    left: 0;
+}
+}
+
+________________________________________________________________________________________________________________________________________________
+
+JavaScript ↓↓↓
+
+
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector(".menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    menu.classList.toggle("active");
+});
+
+document.querySelectorAll(".m-link").forEach(n => n.
+    addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        menu.classList.remove("active");
+    }));
+
